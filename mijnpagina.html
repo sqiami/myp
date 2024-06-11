@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Click Counter</title> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <script> 
+ $(document).ready(function() { 
+       // Initial count 
+       var clickCount = 0; 
+        // Select the button element 
+        var button = $("#click-button"); 
+        // Select the span element to display the count var counterSpan = $("#click-count"); 
+        // Click event handler for the button button.click(function() { clickCount++; 
+        // Increment the count on click counterSpan.text(clickCount); // Update the displayed count 
+               });
+        }); 
+    </script> 
+</head> 
+<body> 
+    <h1>Click Counter</h1> 
+    <p>Click the button below to keep track of your clicks.</p> 
+    <button id="click-button">Click Me</button> 
+    <span id="click-count">0</span> 
+</body> 
+</html>
